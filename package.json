@@ -9,7 +9,7 @@
     "lint": "eslint src/{**/*,*}.ts && prettier --check src/{**/*,*}.ts",
     "lint:fix": "eslint --fix src/{**/*,*}.ts && prettier --write src/{**/*,*}.ts"
   },
-  "keywords": [],
+  "keywords": ["verdaccio", "verdaccio-plugin", "verdaccio-auth-plugin", "plugin", "auth"],
   "author": "",
   "license": "ISC",
   "dependencies": {
