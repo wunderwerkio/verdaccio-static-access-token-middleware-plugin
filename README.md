@@ -5,11 +5,14 @@ Adds support for static access tokens to verdaccio.
 ## Motivation
 
 Verdaccio supports creating NPM tokens via the `npm token` command already.  
-However, verdaccio uses JWT for the tokens which have an expiry date for security
-reasons and because the JWT cannot be invalidated on the server side.
+However, verdaccio uses JWT for the tokens which have an expiry date.
 
 When using verdaccio as a registriy in CI/CD setups, having to use tokens with
 an expiration date (which is rather short lived when using JWT) is really annoying.
+
+Using JWT with no expiration date or not validating JWTs expiration date is
+not an option, because the token contains all necesarry information and
+cannot be invalidated from the server side.
 
 This plugins enables you to specify a hard-coded list of access tokens in the
 verdaccio config.  
