@@ -1,6 +1,6 @@
 {
   "name": "@wunderwerk/verdaccio-static-access-token-middleware-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,13 @@
     "lint": "eslint src/{**/*,*}.ts && prettier --check src/{**/*,*}.ts",
     "lint:fix": "eslint --fix src/{**/*,*}.ts && prettier --write src/{**/*,*}.ts"
   },
-  "keywords": ["verdaccio", "verdaccio-plugin", "verdaccio-auth-plugin", "plugin", "auth"],
+  "keywords": [
+    "verdaccio",
+    "verdaccio-plugin",
+    "verdaccio-auth-plugin",
+    "plugin",
+    "auth"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
