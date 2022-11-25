@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "@verdaccio/core": "6.0.0-6-next.48",
+    "@verdaccio/config": "6.0.0-6-next.48",
     "debug": "^4.3.4"
   },
   "devDependencies": {
