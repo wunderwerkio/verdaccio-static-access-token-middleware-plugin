@@ -104,9 +104,7 @@ export default class StaticAccessTokenMiddlewarePlugin implements IPluginMiddlew
    * Checks if the plugin is enabled in config.
    */
   protected isPluginEnabled(): boolean {
-    if (PLUGIN_NAME in this.config.middlewares) {
-      return Boolean(this.config.middlewares[PLUGIN_NAME].enabled);
-    }
+    return this.config.enabled;
 
     debug('Middleware not defined! This should never happen!');
 
